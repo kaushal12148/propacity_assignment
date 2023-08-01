@@ -1,0 +1,152 @@
+.films {
+    width: 95%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.navbar input {
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    width: 30%;
+}
+@media(max-width:800px) {
+    .navbar input{
+        margin: 0;
+        width: 100%;
+    }
+}
+.titleBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.displayButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid white;
+    border-radius: 2px; */
+}
+.displayButton div {
+    padding: 5px;
+    margin: 0;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.displayButton img {
+    width: 15px;
+    margin:2px;
+}
+.displayButton span {
+    margin: 0 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.reel {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.mainTable tr {
+    border-bottom: 2px solid white;
+
+
+}
+.mainTable th {
+    background-color:  #4D5875;
+    padding: 20px 5px !important;
+
+}
+.mainTable td {
+    width: 25%;
+    padding: 20px 5px;
+}
+
+.mainTable table {
+    width: 100%;
+}
+.more {
+    width: 20px;
+}
+
+.menuItem img {
+    width: 15px;
+    margin-right: 10px;
+}
+.delete {
+    color: red;
+    cursor: pointer;
+}
+.threeDot{
+    text-align: right;
+    padding-right: 20px !important;
+}
+
+
+/* modal css in list view  */
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    min-height:350px ;
+    padding: 20px;
+
+}
+
+.modalContent h2 {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.modalContent span {
+    font-size: 1.5rem;
+    color: gray;
+}
+.btnGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.cancel {
+    /* width: 150px ; */
+    padding: 10px;
+    flex: 1;
+    background-color: white;
+    color: black;
+}
+.yes {
+    flex: 1;
+    padding: 10px;
+    /* width: 150px; */
+    background-color: orangered;
+    color: white;
+}
+.ficon {
+    width: 80px;
+
+}

@@ -1,0 +1,17 @@
+.home {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100%;
+    padding: 30px 20px;
+}
+
+
+
+@media (max-width:800px) {
+    .home {
+        position: relative;
+        width: 100%;
+    }
+}

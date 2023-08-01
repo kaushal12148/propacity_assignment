@@ -1,0 +1,223 @@
+.card {
+    flex: 1;
+    flex-basis: 300px;
+    /* width: 300px; */
+    min-height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:5px;
+}
+.card:hover {
+    .movieImg {
+        transform: scale(1.5);
+        transition-duration: 500ms;
+    }
+}
+.movieImgDiv {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.movieImg {
+    width: 100%;
+    height: 150px;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #F9FAFD33;
+    width: 100%;
+    min-height: 40px;
+    padding: 0 10px;
+}
+
+.leftDiv {
+    display: flex;
+   gap: 10px;
+   align-items: center;
+}
+.reel {
+    width: 20px;
+}
+.more {
+    width: 20px;
+    z-index: 8;
+}
+.more:hover {
+    transform: scale(1.1);
+}
+
+.menuItem img {
+    width: 15px;
+    margin-right: 10px;
+}
+.del {
+    color: red;
+    cursor: pointer;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    min-height:350px ;
+    padding: 20px;
+}
+
+.modalContent h2 {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.modalContent span {
+    font-size: 1.5rem;
+    color: gray;
+}
+.btnGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.cancel {
+    /* width: 150px ; */
+    padding: 10px;
+    flex: 1;
+    background-color: white;
+    color: black;
+}
+.yes {
+    flex: 1;
+    padding: 10px;
+    /* width: 150px; */
+    background-color: orangered;
+    color: white;
+}
+.ficon {
+    width: 80px;
+
+}
+
+
+/* css for modal  */
+
+.modal2{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #03123d;
+    z-index: 10;
+    border-left: 1px solid #03123d;
+    box-shadow: -3px 0px 5px 0px rgba(19,28,83,0.87);
+-webkit-box-shadow: -3px 0px 5px 0px rgba(19,28,83,0.87);
+-moz-box-shadow: -3px 0px 5px 0px rgba(19,28,83,0.87);
+}
+@media(max-width:800px) {
+    .modal2 {
+        position: fixed;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #03123d;
+    z-index: 10;
+    border-left: 1px solid #03123d;
+    box-shadow: -3px 0px 5px 0px rgba(19,28,83,0.87);
+-webkit-box-shadow: -3px 0px 5px 0px rgba(19,28,83,0.87);
+-moz-box-shadow: -3px 0px 5px 0px rgba(19,28,83,0.87);
+    }
+}
+
+.headingDiv {
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10%;
+    border-bottom: 1px solid white;
+
+}
+.headingDiv img {
+    width: 10px;
+}
+.headingDiv h2 {
+    font-size: 1rem;
+}
+.modal2Main {
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.modal2Main span {
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+.mainImgContainer img{
+    width: 100%;
+    height: 30%;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.mainTitleContainer div {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+}
+
+.mainCrawlContainer div {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+}
+.mainGenreContainer div {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: 0.7rem;
+}
+
+.modal2Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:10% ;
+    border-top:1px solid white;
+}
+.close {
+    flex:1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #cb1a80;
+    color: white;
+}
+
+
+

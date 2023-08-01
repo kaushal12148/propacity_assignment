@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    width: 1366px;
+    background-color:#03123D;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.fieldGroup{
+     position: relative;
+}
+
+.inputField{
+width: 216px;
+height: 30px;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+padding-left: 40px;
+border: 1px solid var(--white-1, #FFF);
+border-radius: 4px;
+background: rgba(255, 255, 255, 0.00);
+
+}
+
+.inputField::placeholder {
+    color: var(--white-1, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.5px;
+}
+
+.icon {
+    position: absolute;
+    left:5px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
